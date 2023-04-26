@@ -1,0 +1,126 @@
+<html class="system">
+
+<head>
+  <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:site_name" content="Honkai: Star Rail Character Sorter">
+  <meta name="og:description" content="A simple website for sorting Honkai: Star Rail characters in a formatted list.">
+  <meta name="og:image" content="/src/assets/Honkai-Star-Rail-Logo.png">
+  <title>Honkai: Star Rail Character Sorter</title>
+
+  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+  <script src="src/js/data.js"></script>
+  <script src="src/js/data/2023-04-26.js"></script>
+
+  <script src="src/js/html2canvas.min.js"></script>
+  <script src="src/js/lz-string.min.js"></script>
+  <script src="src/js/seedrandom.min.js"></script>
+  <script src="src/js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="progress">
+        <span class="progressbattle"></span>
+        <div class="progressbar">
+            <div class="progressfill"><span class="progresstext"></span></div>
+        </div>
+    </div>
+
+    <div class="sorter">
+        <div class="left wrapper">
+            <img src="src/assets/defaultL.png" class="sort image">
+        </div>
+
+        <div class="starting start button">Honkai: Star Rail Character Sorter<br><br>Click to Start!</div>
+        <div class="starting load button">Load <span></span></div>
+
+        <div class="loading button"><div></div><span>Loading...</span></div>
+
+        <div class="sorting tie button">Tie</div>
+        <div class="sorting undo button">Undo</div>
+        <div class="sorting save button">Save Progress</div>
+
+        <div class="finished save button">Generate Result URL</div>
+        <div class="finished getimg button">Generate Image</div>
+        <div class="finished list button">Generate Text List</div>
+
+        <div class="right wrapper">
+            <img src="src/assets/defaultR.png" class="sort image">
+        </div>
+
+        <div class="left sort text"><p></p></div>
+        <div class="right sort text"><p></p></div>
+    </div>
+
+    <div class="options-wrapper">
+        <div class="options"></div>
+    </div>
+    <div class="image selector">Display Images on Result: </div>
+    <div class="time taken"></div>
+    <div class="results"></div>
+
+    <div class="info">
+        <a href="mailto:hi@hiiruki.dev">Contact</a>
+        | <a href="https://github.com/hiiruki/hsr-sorter/">Source Code</a>
+        | <a class="clearsave">Clear Save Data</a>
+
+        <br><br>
+
+        <div>
+            <label for="theme">theme: </label>
+
+            <select name="theme" id="theme" onchange="setTheme(this)">
+                <option value="system">system theme</option>
+                <option value="dark">dark</option>
+                <option value="light">light</option>
+            </select>
+        </div>
+
+        <br>
+
+        <p>Sorter for <a href="https://hsr.hoyoverse.com/">Honkai: Star Rail</a>. Pick your sources, and hit the Start button.</p>
+        <p><strong>Certain options have details that you can hover to read.</strong></p>
+        <p>Click on the character you like better from the two, or tie them if you like them equally or don't know them.</p>
+        <p>Depending on how many sources you pick, you'll get up to 136 picks, so set aside a good cup of tea for this.</p>
+
+        <br><br>
+
+        <p>Keyboard controls during sorting: H/LeftArrow (pick left) J/DownArrow (undo) K/UpArrow (tie) L/RightArrow (pick right) S (save progress).</p>
+        <p>Before sorting: S/Enter (start sorting) L (load progress).
+        <p>1/2/3 always correspond to the first/second/third buttons.</p>
+
+        <br><br>
+
+        <p>Maintained by <a href="https://www.hiiruki.dev">Hiiruki</a></p>
+        <p>Originally from <a href="https://tohosort.frelia.my/">execfera's Touhou sorter</a></p>
+        <p>Forked and expanding the idea from <a href="https://4chanmeta.github.io/genshin-sorter/">4ChanMeta's version of Genshin Impact sorter</a></p>
+
+        <br><br>
+
+        <p>Last updated: April 26th, 2023 (28 Characters)</p>
+        <br><br>
+
+        <p>Changelogs:</p>
+        <p> April 26th, 2023 - Site deployed.</p><br>
+        <p><a href="./changelogs.html">Previous changelogs</a></p>
+        <br><br>
+
+        <p>Feel free to report any issues <a href="https://github.com/hiiruki/hsr-sorter/issues">here</a>.</p>
+
+        <br><br>
+
+        <footer>
+            <p>This is a fan-made sorter. I am not affiliated with HoYoverse or any of its developers. Honkai: Star Rail, game content and materials are trademarks and copyrights of HoYoverse.</p>
+        </footer>
+
+    </div>
+</div>
+</body>
+
+</html>

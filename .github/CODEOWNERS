@@ -1,0 +1,11 @@
+* @execfera
+/.github/ @hiiruki
+/src/js/data/ @hiiruki
+/src/assets/ @hiiruki # Game content and materials are trademarks and copyrights of HoYoverse.
+/src/css/ @execfera @hiiruki @4ChanMeta
+index.html @execfera @hiiruki @4ChanMeta
+changelogs.html @hiiruki
+LICENSE.md @execfera @hiiruki @4ChanMeta
+CODE_OF_CONDUCT.md @hiiruki
+CONTRIBUTING.md @hiiruki
+README.md @hiiruki

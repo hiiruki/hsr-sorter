@@ -1,0 +1,50 @@
+<html class="system">
+
+<head>
+  <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:site_name" content="Honkai: Star Rail Character Sorter">
+  <meta name="og:description" content="A simple website for sorting Honkai: Star Rail characters in a formatted list.">
+  <meta name="og:image" content="/src/assets/Honkai-Star-Rail-Logo.png">
+  <title>Honkai: Star Rail Character Sorter</title>
+
+  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+  <script src="src/js/data.js"></script>
+  <script src="src/js/data/2023-04-26.js"></script>
+
+  <script src="src/js/html2canvas.min.js"></script>
+  <script src="src/js/lz-string.min.js"></script>
+  <script src="src/js/seedrandom.min.js"></script>
+  <script src="src/js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+        <br>
+
+        <body>
+                <div class="info">
+                    <p>Honkai: Star Rail Character Sorter</p><br>
+                    <p>Changelogs:</p>
+                    <p> April 26th, 2023 - Site deployed.</p><br>
+                    <br>
+                    <a href="./index.html">Go back</a>
+                </div>
+
+                <div>
+                    <label for="theme">theme: </label>
+                    <select name="theme" id="theme" onchange="setTheme(this)">
+                        <option value="system">system theme</option>
+                        <option value="dark">dark</option>
+                        <option value="light">light</option>
+                    </select>
+                </div>
+
+</body>
+
+</html>
